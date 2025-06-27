@@ -1,0 +1,7 @@
+CONFIGURE GIT WITH USERNAME AND EMAIL
+    $ git config --global user.name "yogesh kumar"
+    $ git config --global user.email "1413002yogesh10206@gmail.com"
+    $ git config --list
+
+TRACKING COMMANDS
+    $ git init -> initialized empty git repo
