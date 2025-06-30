@@ -5,3 +5,42 @@ CONFIGURE GIT WITH USERNAME AND EMAIL
 
 TRACKING COMMANDS
     $ git init -> initialized empty git repo
+    $ git status -> check files status (untracked, tracked)
+    $ git add index.html -> staging area
+    $ git commit -m "first v1 of index.html"
+    $ git branch -> check branch
+    $ git log -> it show you all recent commits
+    $ git diff -> you can see changes by this COMMANDS
+    $ git diff --cached -> you cann see last added stage by "git add index.html"
+    $ git show 4e01187c745212f49242bd240fe5bdf4d100577a:index.html -> check old commits specific file
+    $ git checkout 4e01187c745212f49242bd240fe5bdf4d100577a -- * || -- index.html -> go previous version by id 
+    $ git checkout main -- * -> return to same stage by branch
+
+NEGATIVE CASES
+ if we made any change by mistake and save it
+    1) to undo changes, get the last successful change (when didn't it add to stage)
+        $ git restore index.html 
+
+    2) when git add . used excidently and we want to remove stage (to unstage)
+        $ git restore --staged index.html 
+
+    3) Added changes to staging area (didn't commit) after this added more changes to file then want to comeback in added stage
+        $ git restore --worktree index.html
+    
+    4) how about if we did commit also wrong files (uncommit)
+        $ git reset --soft HEAD^ (uncommit and keep the changes)
+        $ git reset --hard HEAD^ (uncommit and remove the changes)
+
+USEFUL "git log" OPTIONS
+    $ git log -p -2 (last two commit with diff)
+    $ git log --stat (summary of changes)
+
+    $ git log --pretty=oneline
+    $ git log --pretty=format:"%h-%an, %ar:%s"
+
+    $ git log -S function_name/"tagName"/"string" -> most useful
+    $ git log --grep="fix bug" (search commit msg)
+    $ git log --since="2024-01-01"
+    $ git log --until="2024-01-01"
+    $ git log --author="yogesh"
+
