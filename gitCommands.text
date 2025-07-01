@@ -4,7 +4,7 @@ CONFIGURE GIT WITH USERNAME AND EMAIL
     $ git config --list
 
 TRACKING COMMANDS
-    $ git init -> initialized empty git repo
+    $ git init -> (initialized empty git repo)
     $ git status -> check files status (untracked, tracked)
     $ git add index.html -> staging area
     $ git commit -m "first v1 of index.html"
@@ -44,3 +44,11 @@ USEFUL "git log" OPTIONS
     $ git log --until="2024-01-01"
     $ git log --author="yogesh"
 
+CHECK
+    $ git remote || git remote -v (it's used to check remote repo is linked or not)
+
+UNDERSTAND GIT PULL
+    $ git pull (getting latest changes that happened in remote repo)
+
+GIT CLONE
+    $ git clone https://github.com/YogeshSahu995/git-repo.git
