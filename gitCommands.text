@@ -52,3 +52,9 @@ UNDERSTAND GIT PULL
 
 GIT CLONE
     $ git clone https://github.com/YogeshSahu995/git-repo.git
+
+BRANCHING AND MERGING
+    $ git branch new_branch
+    $ git checkout command/adder
+    then same way add and commit
+    $ git merge branchName
