@@ -56,4 +56,5 @@ GIT CLONE
 BRANCHING AND MERGING
     $ git branch new_branch
     $ git checkout command/adder
-    then same way add, commit
+    then same way add and commit
+    $ git merge branchName
