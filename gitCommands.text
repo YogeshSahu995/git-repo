@@ -60,3 +60,7 @@ BRANCHING AND MERGING
     $ git merge branchName
 
     $ git push origin command/adder //use for show flow of merging branch
+
+CONFILCT SITUATION
+    WHEN you work on same file and another also works on same file then both commited the file then main branch run command
+    $ git merge branchName
