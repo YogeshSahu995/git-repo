@@ -64,3 +64,7 @@ BRANCHING AND MERGING
 CONFILCT SITUATION
     WHEN you work on same file and another also works on same file then both commited the file then main branch run command
     $ git merge branchName
+    $ git push origin design:mergin-changes //push changes locally to remote repository by this command
+    
+    //by main branch
+    $ git merge origin/feature --no-edit
