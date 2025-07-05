@@ -58,3 +58,5 @@ BRANCHING AND MERGING
     $ git checkout command/adder
     then same way add and commit
     $ git merge branchName
+
+    $ git push origin command/adder //use for show flow of merging branch
