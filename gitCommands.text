@@ -77,4 +77,24 @@ BRANCHING AND MERGING
         🔄 If you have a local copy of the feature branch, and you want to merge that instead:
             $ git merge feature
 
+GIT TAGS
+    $ git tag -a v7 -m "this is v7"
+        -> git show v7 (check it without id)
+    
+    $ git tag -a v5 afef985e61526496bffdae1ef72169f01699b32f -m "this is v5" 
+        (add tag on previous commits)
+    
+    $ git tag (show all TAGS)
+
+    $ git tag -d <tag_no> (to delete a tag)
+
+    (Tags created remain local, to move it to remote)
+    $ git push origin v1.5
+    $ git push origin --tags (For all tags together)
+
+
+# when message wants
+    -> i -> type message -> esc+shift+: -> wq
+
+
     
