@@ -59,4 +59,22 @@ BRANCHING AND MERGING
     then same way add and commit
     $ git merge branchName
 
-    $ git push origin command/adder //use for show flow of merging branch
+    //push to remote repo
+    $ git push origin command/adder
+
+    $ git push origin feature-branch:testing-branch // change name of branch when push 
+
+    Make sure your local repo is up to date:
+    $ git pull origin main
+
+    Fetch latest updates from the remote repo:
+    $ git fetch origin
+
+    Merge the other branch (e.g. feature) into main:
+    $ git merge origin/feature --no-edit
+
+    This merges the remote feature branch into your local main branch.
+        🔄 If you have a local copy of the feature branch, and you want to merge that instead:
+            $ git merge feature
+
+    
